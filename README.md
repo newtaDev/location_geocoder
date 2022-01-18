@@ -18,5 +18,5 @@ To Get Coordinates from Address
         const _apiKey = 'YOUR_MAP_API_KEY';
         final LocatitonGeocoder geocoder = LocatitonGeocoder(_apiKey);
         final address = await geocoder.findAddressesFromQuery('kochi,kerala');;
-        print(address.first.addressLine);
+        print(address.first.coordinates);
 ```

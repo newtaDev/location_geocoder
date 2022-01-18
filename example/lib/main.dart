@@ -56,8 +56,7 @@ class MyHomePage extends StatelessWidget {
     Future<void> _getLatLang() async {
       try {
         final address = await geocoder.findAddressesFromQuery('kochi,kerala');
-        var message = address.first.addressLine;
-        if (message == null) return;
+        var message = address.first.coordinates.toString();
         log(message);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
