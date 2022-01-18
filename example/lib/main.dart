@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:location_geocoder/geocoder.dart';
+import 'package:location_geocoder/location_geocoder.dart';
 
 void main() {
   runApp(const MyApp());

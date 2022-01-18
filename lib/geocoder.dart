@@ -1,11 +1,4 @@
-import 'services/distant_google.dart';
-export './geocoder.dart';
-
-class LocatitonGeocoder extends GoogleGeocoding {
-  final String _apiKey;
-  final String? lang;
-  LocatitonGeocoder(this._apiKey, {this.lang}) : super(_apiKey, language: lang);
-}
+library location_geocoder;
 
 class Coordinates {
   /// The geographic coordinate that specifies the north–south position of a point on the Earth's surface.
