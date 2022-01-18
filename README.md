@@ -1,16 +1,22 @@
 # location_geocoder
 
-A new Flutter project.
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+> #### ADD YOUR MAP API KEY
 
-A few resources to get you started if this is your first Flutter project:
+To Get Address from Coordinates
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```dart
+        final LocatitonGeocoder geocoder = LocatitonGeocoder(_apiKey);
+        final address = await geocoder
+            .findAddressesFromCoordinates(Coordinates(9.9312, 76.2673));
+        print(address.first.addressLine);
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To Get Coordinates from Address
+
+```dart
+        final LocatitonGeocoder geocoder = LocatitonGeocoder(_apiKey);
+        final address = await geocoder.findAddressesFromQuery('kochi,kerala');;
+        print(address.first.addressLine);
+```
