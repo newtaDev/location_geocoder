@@ -1,5 +1,9 @@
 # location_geocoder
 
+Flutter package to convert latitude/longitude to address and from address to latitude/longitude.
+provides easy geocoding and reverse-geocoding features. ( geocoder )
+uses goolgle's location api
+
 ## Getting Started
 
 To Get Address from Coordinates

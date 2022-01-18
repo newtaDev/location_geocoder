@@ -1,6 +1,11 @@
 ## 1.0.0
 
-* initial publish.
+- initial publish.
+
 ## 1.0.1
 
-* --fix typo.
+- --fix typo.
+
+## 1.0.2
+
+- update README.md
