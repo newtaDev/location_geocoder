@@ -8,6 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  ///Main App
   const MyApp({Key? key}) : super(key: key);
 
   @override
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+  /// sub page
   const MyHomePage({Key? key}) : super(key: key);
 
   @override
@@ -31,6 +33,7 @@ class MyHomePage extends StatelessWidget {
     const _apiKey = "";
     late LocatitonGeocoder geocoder = LocatitonGeocoder(_apiKey);
 
+    ///converts `coordinates` to actual `address` using google map api
     Future<void> _getAddress() async {
       try {
         final address = await geocoder
@@ -53,6 +56,7 @@ class MyHomePage extends StatelessWidget {
       }
     }
 
+    ///converts `address` to actual `coordinates` using google map api
     Future<void> _getLatLang() async {
       try {
         final address = await geocoder.findAddressesFromQuery('kochi,kerala');

@@ -7,6 +7,7 @@ class Coordinates {
   /// The geographic coordinate that specifies the east-west position of a point on the Earth's surface.
   final double? longitude;
 
+  /// coordinates that accepts `latitude` and `logitude` as params
   Coordinates(this.latitude, this.longitude);
 
   /// Creates coordinates from a map containing its properties.
@@ -61,6 +62,7 @@ class Address {
   /// The sub-thoroughfare name of the address
   final String? subThoroughfare;
 
+  ///extracted address details from api
   Address(
       {required this.coordinates,
       this.addressLine,
