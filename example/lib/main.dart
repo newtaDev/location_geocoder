@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     //TODO: ADD YOUR MAP API KEY
     const _apiKey = "";
-    late LocatitonGeocoder geocoder = LocatitonGeocoder(_apiKey);
+    late LocationGeocoder geocoder = LocationGeocoder(_apiKey);
 
     ///converts `coordinates` to actual `address` using google map api
     Future<void> _getAddress() async {
